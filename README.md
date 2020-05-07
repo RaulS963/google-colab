@@ -24,3 +24,10 @@ __NOTE__: If you are creating/writing a file inside a directory, that directory 
 with open('/content/gdrive/My Drive/file_name.txt', 'r') as f:
   f.read()
 ```
+
+## Downloading a file from google-drive
+To download a file from google-drive to your local machine
+```python
+from google.colab import files
+files.download("/content/gdrive/My Drive/testfile.txt")
+```
